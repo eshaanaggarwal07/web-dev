@@ -1,0 +1,29 @@
+body{
+    background-color: blue;
+    background-image: linear-gradient(to bottom,darkblue,navy);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#less {color: white;
+    background-color: white;
+    background-image: linear-gradient(to right, purple, coral);
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#text h2{color: coral;}
+#text p{color: white;}
+#text{
+    background-color: rgb(25, 112, 99);
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    animation: circle_animation 3s infinite alternate;
+}
+@keyframes circle_animation{
+    from{
+        background-color: yellow;
+    }
+    to{background-color: green;}
+}
