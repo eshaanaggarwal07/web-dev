@@ -1,0 +1,42 @@
+<html> 
+    <head>
+
+    </head>
+    <body>
+        <h1> My Doctors Appointment </h1>
+        <p>Fill in the form below to look your appointment</p>
+       <fieldset>
+        <legend>
+            Personal Details
+        </legend>
+        <label>Name</label>
+        <br>
+        <input placeholder="Enter your Name" type="text"><br><br>
+        <label>Patient ID</label>
+        <br>
+        <input placeholder="Enter your ID" type="text"><br><br>
+        <label>Your Birth Date</label>
+        <br>
+        <input type="date"><br><br>
+        <select id="doctor">
+            <option value="">-- Select a doctor --</option>
+            <option value="dr-ray">Dr. Ray — General</option>
+            <option value="dr-lee">Dr. Lee — Teeth</option>
+            <option value="dr-singh">Dr. Singh — Eyes</option>
+         </select><br>
+         <br>
+        <label>Any notes for the doctor?</label><br>
+        <textarea rows="3" cols="35" placeholder="e.g. I have had a sore throat for 2 days.">
+        </textarea>
+        <br> <br>
+        <input type="radio" name="F"> Fever
+        <input type="radio" name="F"> Cold
+        <br> <br>
+        <input type="checkbox" name="f">Monday<br>
+        <input type="checkbox" name="f">Tuesday<br>
+        <input type="checkbox" name="f">Wednesday<br>
+       </fieldset>
+       <br>
+        <button>Book my Appointment</button>
+    </body>
+</html>
