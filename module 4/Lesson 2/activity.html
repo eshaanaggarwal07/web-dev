@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="calculate_sub(231234567890,890)">hi</button>
+        <p id="subtract"></p>
+        <p id="pad"></p>
+       <script>
+        function calculate_div (p,h)
+        {
+            var div=p/h;
+           return div;
+        }
+        var total= calculate_div(6,20)
+        document.write(total)
+
+
+         function calculate_sub(x,y)
+        {
+            var sub=x-y;
+            document.getElementById("subtract").innerHTML=sub;
+        }
+         var lag = function(a,b)
+        {
+            var rem=a%b;
+            document.getElementById("pad").innerHTML= rem;
+
+        }
+        lag(6,13)
+       </script> 
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <div class="div1">
+
+            <p id="mario">Atharv & Eshaan</p>
+            <p id="Uuper_Case">     </p>
+            <p id="neeche_Case">    </p>
+            <button onclick="display()"> Display All</button>
+        </div>
+        <script>
+
+            function display()
+            {
+                var full_mario = document.getElementById("mario").textContent;
+                var full_mario_Uupper= full_mario.toUpperCase();
+
+                document.getElementById("Uuper_case").innerHTML = full_mario_Uupper;
+
+
+                full_mario = document.getElementById("mario").textContent;
+                var full_mario_neeche = full_mario.toLowerCase();
+
+                document.getElementById("neeche_case").innerHTML = full_mario_neeche;
+            }
+        </script>
+    </body>
+</html>
