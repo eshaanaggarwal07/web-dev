@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Name: <span id="span_name"></span></p>
+        <p>Phone No: <span id="span_phone"></span></p>
+        <p>School Name: <span id="span_school"></span></p>
+
+        <p>City: <span id="span_city"></span></p>
+
+
+        <script>
+            
+            var person1={ "Name":"Eshaan","Phone_no":9811005213,"School_name":"Maxfort","City":"Dwarka"}
+            document.getElementById("span_name").innerHTML =person1.Name;
+            document.getElementById("span_phone").innerHTML = person1["Phone_no"];
+            document.getElementById("span_school").innerHTML = person1.School_name;
+            document.getElementById("span_city").innerHTML = person1.City;
+        </script>
+    </body>
+</html>

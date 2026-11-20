@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body id="body1">
+        <h1>My Zoo</h1>
+        <p>Use Javascript and the DOM to  to each cage! </p>
+        <div id="div1">
+            <div>Zone 1 :<span id="animal1">        </span> </div>
+            <div>Zone 2 :<span id="animal2">         </span></div>
+            <div>Zone 3 :<span id="animal3">             </span></div>
+            <div>Total Animals:<span id="animal4">       </span></div>
+        </div>
+        <button onclick="display_animals()">Show animals</button>
+
+        <script>
+            function display_animals()
+            {
+                document.getElementById("animal1").innerHTML = "Elephant"
+                document.getElementById("animal2").innerHTML = "godzila"
+                document.getElementById("animal3").innerHTML = "Donkey"
+                document.getElementById("animal4").innerHTML = "lion"
+                 document.getElementById("div1").style.backgroundColor = "red";
+                  document.getElementById("body1").style.fontSize = "30px";
+                  document.title=document.title +"is very funny"
+            }
+        </script>
+    </body>
+</html>

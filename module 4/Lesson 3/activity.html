@@ -9,6 +9,9 @@
             <p id="mario">Atharv & Eshaan</p>
             <p id="Uuper_Case">     </p>
             <p id="neeche_Case">    </p>
+            <p id="email_check"> </p>
+            <p id="flr_value"></p>
+            <p id="random_value"></p>
             <button onclick="display()"> Display All</button>
         </div>
         <script>
@@ -16,15 +19,27 @@
             function display()
             {
                 var full_mario = document.getElementById("mario").textContent;
-                var full_mario_Uupper= full_mario.toUpperCase();
+                var full_mario_Uuper= full_mario.toUpperCase();
 
-                document.getElementById("Uuper_case").innerHTML = full_mario_Uupper;
+                document.getElementById("Uuper_Case").innerHTML = full_mario_Uuper;
 
 
                 full_mario = document.getElementById("mario").textContent;
                 var full_mario_neeche = full_mario.toLowerCase();
 
-                document.getElementById("neeche_case").innerHTML = full_mario_neeche;
+                document.getElementById("neeche_Case").innerHTML = full_mario_neeche;
+                var email = "eahaanaggarwal2@gmail.com";
+                var pattern = new RegExp("@")
+                var output = pattern.test(email);
+                document.getElementById("email_check").innerHTML =output;
+
+                var number=4.8;
+                var number_flr=Math.floor(number)
+                document.getElementById("flr_value").innerHTML = number_flr;
+
+                var random_value = Math.random()
+                document.getElementById("random_value").innerHTML =random_value;
+
             }
         </script>
     </body>
