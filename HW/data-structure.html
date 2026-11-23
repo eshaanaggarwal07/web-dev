@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>My Profile and Favourite Colours</h2>
+    <p id="profile"></p>
+    <p id="pet"></p>
+    <p id="favcolor"></p>
+    <p id="before"></p>
+    <p id="after"></p>
+    <script>
+        var student = {
+            name : "Riya",
+            age : 12,
+            grade : 7,
+            hobby :"Drawing",
+            favSport:"Cricket"
+        };
+        var color = ["white","black","red","green","blue"];
+        document.getElementById("profile").innerHTML="Name :"+ student.name +" | Favourite sport: "+ student["favSport"];
+        document.getElementById("pet").innerHTML = "Pet:"+ student.pet;
+        document.getElementById("favcolor").innerHTML ="My favourite color is " + colors[3];
+        document.getElementById("before").innerHTML = "After pop : " + colors.join("*") + "("+ colors.length +" colors)";
+        colors.pop();
+            document.getElementById("after").innerHTML = "After pop: " +
+                colors.join(" * ") + " (" + colors.length + " colours)";
+                document.getElementById("random").innerHTML = "Random colour: " +
+                        colors[Math.floor(Math.random() * colors.length)];
+    </script>
+</body>
+
+</html>
