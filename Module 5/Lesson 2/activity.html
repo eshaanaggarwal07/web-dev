@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            class planet
+            {
+                constructor(name,info)
+                {this.name =name;
+                    this.info = info;
+                }
+                getName()
+                {
+                    return this.name; 
+                }
+                getinfo()
+                {
+                    return this.info;
+                }
+
+            } 
+            var planet1= new planet("Earth","the only planet with a life.")
+            var planet2= new planet("Mars","the closest to the sun")
+            var name = planet1.getName();
+            var info = planet1.getinfo();
+            var name1 = planet2.getName();
+            var info1 = planet2.getinfo();
+            document.write(planet)
+        </script>
+    </body>
+</html>
